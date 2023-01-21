@@ -1,0 +1,62 @@
+{
+	"manifestVersion" : 4,
+	"id" : "com.hallucinate.photoshop",
+	"name" : "Hallucinate",
+	"version" : "1.0",
+	"host" : {
+		"app" : "PS",
+		"minVersion" : "23.0.0",
+		"data": {
+			"apiVersion": 2
+		}
+	},
+	"requiredPermissions": {
+		"localFileSystem": "plugin",
+		"network": { 
+			"domains": [
+				"https://api.hallucinate.app",
+				"wss://api.hallucinate.app"
+			]
+    	}
+	},
+	"main" : "plugin.html",
+	"entrypoints": [{
+		"type": "panel",
+		"id": "diffusion",
+		"label": {
+			"default": "Diffusion"
+		},
+		"minimumSize": {
+			"width": 260,
+			"height": 500
+		},
+		"maximumSize": {
+			"width": 400,
+			"height": 1200
+		},
+		"preferredDockedSize": {
+			"width": 312,
+			"height": 700
+		},
+		"preferredFloatingSize": {
+			"width": 312,
+			"height": 700
+		}
+	}],
+	"icons" : [ 
+		{
+			"path" : "icons/dark.png",
+			"width" : 23,
+			"scale" : [ 1, 2 ],
+			"theme" : [ "darkest", "dark", "medium" ],
+			"height" : 23
+		}, 
+		{
+			"path" : "icons/light.png",
+			"width" : 23,
+			"scale" : [ 1, 2 ],
+			"theme" : [ "lightest", "light" ],
+			"height" : 23
+		}
+	]
+}

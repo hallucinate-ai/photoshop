@@ -1,0 +1,35 @@
+dialog{
+	padding: 13px;
+	color: var(--color-content);
+	max-height: 600px;
+	overflow-y: auto;
+
+	.body{
+		display: flex;
+		font-size: 13px;
+		font-weight: bold;
+		min-width: 260px;
+		max-width: 410px;
+	}
+
+	.actions{
+		display: flex;
+		flex-direction: row-reverse;
+		margin-top: 10px;
+
+		sp-button,
+		button{
+			margin: 0;
+			margin-left: 10px;
+		}
+	}
+
+	.confirm,
+	.alert{
+		sp-icon{
+			height: 20px;
+			margin-right: 10px;
+			color: var(--color-warn);
+		}
+	}
+}

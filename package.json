@@ -1,0 +1,21 @@
+{
+	"name": "@hallucinate/plugin",
+	"version": "1.0",
+	"devDependencies": {
+		"@babel/core": "^7.18.13",
+		"@babel/plugin-transform-react-jsx": "^7.18.10",
+		"@babel/preset-env": "^7.18.10",
+		"@rollup/plugin-babel": "^5.3.1",
+		"@rollup/plugin-json": "^4.1.0",
+		"@rollup/plugin-node-resolve": "^13.3.0",
+		"rollup-plugin-scss": "^3.0.0",
+		"sass": "^1.55.0"
+	},
+	"dependencies": {
+		"@mwni/events": "^2.0.1"
+	},
+	"scripts": {
+		"build": "rollup --config",
+		"dev": "rollup --config --watch"
+	}
+}
